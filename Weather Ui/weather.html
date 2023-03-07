@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <title>Weather Ui</title>
+</head>
+
+<body>
+    <div id="photo">
+        <form id="source" autocomplete="off">
+            <input type="text" placeholder="city" id="area" name="city" />
+            <input type="text" placeholder="country" id="res" name="country" />
+            <button type="submit">Get Weather</button>
+        </form>
+        <main>
+            <section class="card">
+                <h2 id="country">Munich</h2>
+                <p id="date">Wed 22 August</p>
+                <hr id="line_1">
+                <h1 id="temp">30&deg;C</h1>
+                <p id="min_max">27/17C</p>
+                <iconify-icon icon="wi:day-lightning" id="small_image"></iconify-icon>
+                <p id="description">Moderate or heavy rain shower</p>
+                <hr id="line_2">
+                <p id="wind">Wind: 7 km/h</p>
+                <p id="humidity">Humidity: 77 %</p>
+            </section>
+            <section class="icon">
+                <iconify-icon icon="wi:day-lightning" id="image"></iconify-icon>
+            </section>
+        </main>
+        <script src="weather.js"></script>
+    </div>
+</body>
+
+</html>
